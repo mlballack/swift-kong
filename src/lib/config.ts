@@ -1,21 +1,31 @@
+const avatarurl = "/images/avatar3.png" // "/images/avatar.jpg" // 
+
 export const config = {
-    title: 'MSKong\'s Blog',
+    /*
+    occupation: iOS App Developer
+email: 'district134bus@gmail.com'
+github: 'https://github.com/mlballack'
+twitter: 'https://twitter.com/mh_poteto'
+giita: 'https://qiita.com/district_13_bm'
+    */
+    title: 'SwiftKongCode',
     author: 'Masaki Hayashi',
-    headerTitle: 'MSKong\'s Blog',
-    description: 'MSKong\'s Blog, created with Sveltekit and Tailwind.css',
+    occupation: 'iOS App Developer',
+    headerTitle: 'SwiftKongCode',
+    description: 'SwiftCongCode, created with Sveltekit and Tailwind.css',
     language: 'en-us',
     theme: 'dark', // system, dark or light
     domain: 'http://www.piedpiper.com/',
     siteUrl: 'https://pied-piper-blog.netlify.app',
     siteRepo: 'https://github.com/akiarostami/sveltekit-tailwind-blog-starter',
-    siteLogo: '/icon-512.png',
-    // image: '/img/avatar.png',
-    email: 'info@piedpiper.com',
-    github: 'https://github.com/piedpiper',
-    twitter: 'https://twitter.com/piedpiperplc',
-    facebook: 'https://www.facebook.com/piedpipersv',
-    youtube: 'https://www.youtube.com/watch?v=p3RwX06wcBs',
-    linkedin: 'https://www.linkedin.com/company/pied-piper-plc/',
+    siteLogo: avatarurl, //'/icon-512.png',
+    image: avatarurl,
+    email: 'district134bus@gmail.com',
+    github: 'https://github.com/mlballack',
+    twitter: 'https://twitter.com/mh_poteto',
+    facebook: '',
+    youtube: '',
+    linkedin: '',
     locale: 'en-US',
     primaryColor: '#06a261',
 
@@ -28,11 +38,11 @@ export const config = {
 };
 
 export const user = {
-    name: 'admin',
+    name: 'Masaki Hayashi',
     // avatar value can be removed for image
-    avatar: '/logo.png',
+    avatar: avatarurl, //'./logo.png',
     // twitter value can be removed for no link to twitter
-    twitter: 'https://twitter.com/piedpiperplc'
+    twitter: 'https://twitter.com/mh_poteto'
 };
 
 export const navLinks = [

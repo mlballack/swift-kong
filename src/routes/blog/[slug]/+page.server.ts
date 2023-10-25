@@ -1,5 +1,4 @@
 import { error } from "@sveltejs/kit";
-//import { getEntries } from "$utils/entries";
 import { getEntries } from "../../../utils/entries";
 
 export async function load({ params }) {
@@ -15,8 +14,20 @@ export async function load({ params }) {
     }
 
     return {
-        // eslint-disable-next-line no-unused-vars
         post: post,
         author: author
     };
 }
+
+// export async function load({ params }) {
+//     try {
+//         const post = await import(`/content/posts/${params.slug}.md`)
+//         console.log("post: ", post.default.render)
+//         return {
+//             content: post.default.render,
+//             meta: post.metadata
+//         }
+//     } catch (e) {
+//         throw error(404, `Could not find ${params.slug}`)
+//     }
+// }

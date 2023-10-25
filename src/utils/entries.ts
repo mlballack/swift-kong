@@ -25,6 +25,12 @@ const getAuthors = () => {
     );
 };
 
+const getAuthor = () => {
+    return Object.entries(
+        import.meta.glob("/content/author/**/*.md", { eager: true })
+    )
+}
+
 const getEntriesByType = (entryType: string) => {
     switch (entryType) {
         case "posts":
@@ -33,6 +39,8 @@ const getEntriesByType = (entryType: string) => {
             return getProjects();
         case 'authors':
             return getAuthors();
+        case 'author':
+            return getAuthor();
         default:
             throw new Error(`unknown entry type ${entryType}`);
     }
@@ -68,10 +76,9 @@ const getMetadata = (entryType: string, filepath: string, entry: any) => {
 }
 
 export const getEntries = (entryType: string) => {
-    if (!config.multiuser && entryType === "authors") {
-        return [user];
-    }
-
+    // if (!config.multiuser && entryType === "authors") {
+    //     return [user];
+    // }
     let entries = getEntriesByType(entryType);
     return (
         entries

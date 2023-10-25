@@ -5,6 +5,9 @@
     import { config } from "$lib/config.js";
     export let data;
     const authors = data.authors;
+    const author = authors[0];
+
+    console.log("author: ", author);
 </script>
 
 <Head title="About" />
@@ -17,23 +20,25 @@
         class="items-start space-y-2 xl:grid xl:grid-cols-3 xl:gap-x-8 xl:space-y-0"
     >
         <div class="flex flex-col items-center py-6">
-            <img src={config.siteLogo} alt="logo" class="h-64 w-64" />
+            <img
+                src={config.siteLogo}
+                alt="avatar"
+                class="h-48 w-48 rounded-full"
+            />
+            <h3 class="pt-4 pb-2 text-2xl font-bold leading-8 tracking-tight">
+                {config.author}
+            </h3>
+            <div class="text-gray-500 dark:text-gray-400">
+                {config.occupation}
+            </div>
             <div class="flex space-x-2 pt-4">
                 <SocialIcon icon="mail" url={`mailto:${config.email}`} />
                 <SocialIcon icon="github" url={config.github} />
-                <SocialIcon icon="linkedin" url={config.linkedin} />
                 <SocialIcon icon="twitter" url={config.twitter} />
             </div>
         </div>
         <div class="prose max-w-none pt-8 pb-8 dark:prose-dark xl:col-span-2">
-            Pied Piper (PP) was an American tech company based in Silicon
-            Valley, California. The company was formed in 2014 by Richard
-            Hendricks as a company to develop Richard's algorithm that he'd
-            created. The company is best known to for achieving the highest
-            Weissman score in history during their presentation at TechCrunch
-            Disrupt. The company's first appearance was in the Season One
-            episode Minimum Viable Product and has since served as the primary
-            company for the series.
+            {@html author.content}
         </div>
     </div>
 </div>
