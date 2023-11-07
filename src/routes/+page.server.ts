@@ -1,6 +1,8 @@
 import { getEntries } from "../utils/entries";
 import { error } from "@sveltejs/kit";
 
+const limitedCount = 2;
+
 function getPosts() {
     let posts: any[] = []
 
@@ -19,14 +21,16 @@ function getPosts() {
 }
 
 export async function load() {
-    const posts = getEntries("posts");
+    let posts = getEntries("posts");
     if (!posts) {
         throw error(404, "No post found");
     }
-    //getPosts();
+
+    if (posts.length > limitedCount) {
+        posts = posts.splice(0, limitedCount);
+    }
 
     return {
-        // eslint-disable-next-line no-unused-vars
         posts: posts
     };
 }

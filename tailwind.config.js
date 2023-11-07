@@ -32,7 +32,7 @@ export default {
           css: {
             color: theme('colors.gray.700'),
             a: {
-              color: theme('colors.primary.500'),
+              color: theme('colors.primary.400'),
               '&:hover': {
                 color: `${theme('colors.primary.600')} !important`
               },
@@ -60,7 +60,7 @@ export default {
               backgroundColor: theme('colors.gray.800')
             },
             code: {
-              color: theme('colors.pink.500'),
+              color: theme('colors.primary.600'),
               backgroundColor: theme('colors.gray.100'),
               paddingLeft: '4px',
               paddingRight: '4px',

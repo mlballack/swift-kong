@@ -9,9 +9,9 @@
     <div>
         <a href="/" aria-label={config.headerTitle}>
             <div class="flex items-center justify-between">
-                <div class="mr-3">
+                <!-- <div class="mr-3">
                     <img src="images/logo.svg" alt="Logo" class="h-10 w-auto" />
-                </div>
+                </div> -->
                 <div class="hidden text-4xl font-semibold sm:block font-title">
                     {config.headerTitle}
                 </div>

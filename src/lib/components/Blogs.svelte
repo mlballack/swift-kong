@@ -13,11 +13,10 @@
     export let more = true;
     export let search = true;
     export let h2 = false;
-    export let count = 0;
 
-    if (count) {
-        posts = posts.splice(0, count);
-    }
+    // if (count) {
+    //     posts = posts.splice(0, count);
+    // }
 
     $: filter = $page.url.searchParams.get("query");
     $: currentPosts = filter ? fuzzySearch(posts, filter) : posts;
