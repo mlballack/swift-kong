@@ -1,0 +1,177 @@
+{
+	"version": 3,
+	"routes": [
+		{
+			"src": "/about",
+			"dest": "/about/"
+		},
+		{
+			"src": "/about/",
+			"status": 308,
+			"headers": {
+				"Location": "/about"
+			}
+		},
+		{
+			"src": "/blog",
+			"dest": "/blog/"
+		},
+		{
+			"src": "/blog/",
+			"status": 308,
+			"headers": {
+				"Location": "/blog"
+			}
+		},
+		{
+			"src": "/projects",
+			"dest": "/projects/"
+		},
+		{
+			"src": "/projects/",
+			"status": 308,
+			"headers": {
+				"Location": "/projects"
+			}
+		},
+		{
+			"src": "/blog/post_20230317_02",
+			"dest": "/blog/post_20230317_02/"
+		},
+		{
+			"src": "/blog/post_20230317_02/",
+			"status": 308,
+			"headers": {
+				"Location": "/blog/post_20230317_02"
+			}
+		},
+		{
+			"src": "/tags/nextjs",
+			"dest": "/tags/nextjs/"
+		},
+		{
+			"src": "/tags/nextjs/",
+			"status": 308,
+			"headers": {
+				"Location": "/tags/nextjs"
+			}
+		},
+		{
+			"src": "/tags/react",
+			"dest": "/tags/react/"
+		},
+		{
+			"src": "/tags/react/",
+			"status": 308,
+			"headers": {
+				"Location": "/tags/react"
+			}
+		},
+		{
+			"src": "/tags/typescript",
+			"dest": "/tags/typescript/"
+		},
+		{
+			"src": "/tags/typescript/",
+			"status": 308,
+			"headers": {
+				"Location": "/tags/typescript"
+			}
+		},
+		{
+			"src": "/tags/chatgpt",
+			"dest": "/tags/chatgpt/"
+		},
+		{
+			"src": "/tags/chatgpt/",
+			"status": 308,
+			"headers": {
+				"Location": "/tags/chatgpt"
+			}
+		},
+		{
+			"src": "/blog/post_20230317",
+			"dest": "/blog/post_20230317/"
+		},
+		{
+			"src": "/blog/post_20230317/",
+			"status": 308,
+			"headers": {
+				"Location": "/blog/post_20230317"
+			}
+		},
+		{
+			"src": "/tags/introduction",
+			"dest": "/tags/introduction/"
+		},
+		{
+			"src": "/tags/introduction/",
+			"status": 308,
+			"headers": {
+				"Location": "/tags/introduction"
+			}
+		},
+		{
+			"src": "/blog/hello-world",
+			"dest": "/blog/hello-world/"
+		},
+		{
+			"src": "/blog/hello-world/",
+			"status": 308,
+			"headers": {
+				"Location": "/blog/hello-world"
+			}
+		},
+		{
+			"src": "/_app/immutable/.+",
+			"headers": {
+				"cache-control": "public, immutable, max-age=31536000"
+			}
+		},
+		{
+			"handle": "filesystem"
+		},
+		{
+			"src": "/.*",
+			"dest": "/fn"
+		}
+	],
+	"overrides": {
+		"index.html": {
+			"path": ""
+		},
+		"about.html": {
+			"path": "about"
+		},
+		"blog.html": {
+			"path": "blog"
+		},
+		"projects.html": {
+			"path": "projects"
+		},
+		"blog/post_20230317_02.html": {
+			"path": "blog/post_20230317_02"
+		},
+		"tags/nextjs.html": {
+			"path": "tags/nextjs"
+		},
+		"tags/react.html": {
+			"path": "tags/react"
+		},
+		"tags/typescript.html": {
+			"path": "tags/typescript"
+		},
+		"tags/chatgpt.html": {
+			"path": "tags/chatgpt"
+		},
+		"blog/post_20230317.html": {
+			"path": "blog/post_20230317"
+		},
+		"tags/introduction.html": {
+			"path": "tags/introduction"
+		},
+		"blog/hello-world.html": {
+			"path": "blog/hello-world"
+		}
+	}
+}
