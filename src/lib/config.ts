@@ -12,7 +12,7 @@ giita: 'https://qiita.com/district_13_bm'
     author: 'Masaki Hayashi',
     occupation: 'iOS App Developer',
     headerTitle: 'SwiftKongCode',
-    description: 'SwiftCongCode, created with Sveltekit and Tailwind.css',
+    description: 'SwiftKongCode, created with Sveltekit and Tailwind.css',
     language: 'en-us',
     theme: 'dark', // system, dark or light
     domain: 'https://swift-kong-code.vercel.app/',
