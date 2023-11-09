@@ -3,6 +3,8 @@
 
     import ThemeSwitch from "../ThemeSwitch.svelte";
     import MobileMenu from "../MobileMenu.svelte";
+    import MatrixBackground from "../MatrixBackground.svelte";
+    import CyberpunkTitle from "../CyberpunkTitle.svelte";
 </script>
 
 <header class="flex items-center justify-between py-10">
@@ -12,9 +14,7 @@
                 <!-- <div class="mr-3">
                     <img src="images/logo.svg" alt="Logo" class="h-10 w-auto" />
                 </div> -->
-                <div class="hidden text-4xl font-semibold sm:block font-title">
-                    {config.headerTitle}
-                </div>
+                <CyberpunkTitle title={config.headerTitle} />
             </div>
         </a>
     </div>

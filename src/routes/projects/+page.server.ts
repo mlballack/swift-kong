@@ -7,6 +7,7 @@ export async function load() {
     if (!projects) {
         throw error(404, 'No project found');
     }
+    console.log(projects)
     return {
         // eslint-disable-next-line no-unused-vars
         projects: projects

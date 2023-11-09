@@ -15,9 +15,9 @@ giita: 'https://qiita.com/district_13_bm'
     description: 'SwiftCongCode, created with Sveltekit and Tailwind.css',
     language: 'en-us',
     theme: 'dark', // system, dark or light
-    domain: 'http://www.piedpiper.com/',
-    siteUrl: 'https://pied-piper-blog.netlify.app',
-    siteRepo: 'https://github.com/akiarostami/sveltekit-tailwind-blog-starter',
+    domain: 'https://swift-kong-code.vercel.app/',
+    siteUrl: 'https://swift-kong-code.vercel.app/',
+    siteRepo: 'https://github.com/mlballack/swift-kong.git',
     siteLogo: avatarurl, //'/icon-512.png',
     image: avatarurl,
     email: 'district134bus@gmail.com',
