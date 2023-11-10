@@ -2,29 +2,29 @@
     <channel>
         <title><![CDATA[SwiftKongCode - RSS Feed]]></title>
         <description><![CDATA[SwiftKongCode - RSS Feed]]></description>
-        <link>https://pied-piper-blog.netlify.app</link>
+        <link>https://swift-kong-code.vercel.app/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Tue, 07 Nov 2023 05:50:06 GMT</lastBuildDate>
-        <atom:link href="https://pied-piper-blog.netlify.app/rss.xml" rel="self" type="application/rss+xml"/>
+        <lastBuildDate>Fri, 10 Nov 2023 01:10:19 GMT</lastBuildDate>
+        <atom:link href="https://swift-kong-code.vercel.app//rss.xml" rel="self" type="application/rss+xml"/>
         <item>
             <title><![CDATA[ChatGPTと共にNext.jsで簡易的な掲示板アプリの作る.]]></title>
             <description><![CDATA[ChatGPTを活用しながらReact、Typescript、Next.jsを使用して、簡単な掲示板アプリを作成する方法について解説します。]]></description>
-            <link>https://pied-piper-blog.netlify.app/post_20230317_02</link>
-            <guid isPermaLink="true">https://pied-piper-blog.netlify.app/post_20230317_02</guid>
+            <link>https://swift-kong-code.vercel.app//post_20230317_02</link>
+            <guid isPermaLink="true">https://swift-kong-code.vercel.app//post_20230317_02</guid>
             <pubDate>Sat, 18 Mar 2023 00:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[Next.jsでTodoアプリの作り方.]]></title>
             <description><![CDATA[React、Typescript、Next.jsを使用して、Todoアプリを作成する方法について解説します。]]></description>
-            <link>https://pied-piper-blog.netlify.app/post_20230317</link>
-            <guid isPermaLink="true">https://pied-piper-blog.netlify.app/post_20230317</guid>
+            <link>https://swift-kong-code.vercel.app//post_20230317</link>
+            <guid isPermaLink="true">https://swift-kong-code.vercel.app//post_20230317</guid>
             <pubDate>Fri, 17 Mar 2023 00:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[Hello World.]]></title>
             <description><![CDATA[Hello World.このサイトについて。]]></description>
-            <link>https://pied-piper-blog.netlify.app/hello-world</link>
-            <guid isPermaLink="true">https://pied-piper-blog.netlify.app/hello-world</guid>
+            <link>https://swift-kong-code.vercel.app//hello-world</link>
+            <guid isPermaLink="true">https://swift-kong-code.vercel.app//hello-world</guid>
             <pubDate>Thu, 23 Feb 2023 00:00:00 GMT</pubDate>
         </item>
     </channel>
