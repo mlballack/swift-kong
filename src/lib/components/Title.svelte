@@ -17,7 +17,11 @@
 {/if}
 
 {#if subtitle}
-    <p class="text-lg leading-7 text-gray-700 dark:text-gray-400">
-        {subtitle}
-    </p>
+    <h2
+        class="text-2xl sm:text-2xl md:text-3xl font-bold leading-8 tracking-tight"
+    >
+        <div class="text-green-600 dark:text-green-500">
+            {subtitle}
+        </div>
+    </h2>
 {/if}

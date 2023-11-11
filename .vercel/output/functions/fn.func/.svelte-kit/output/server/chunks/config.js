@@ -1,22 +1,15 @@
 const avatarurl = "/images/avatar3.png";
 const config = {
-  /*
-      occupation: iOS App Developer
-  email: 'district134bus@gmail.com'
-  github: 'https://github.com/mlballack'
-  twitter: 'https://twitter.com/mh_poteto'
-  giita: 'https://qiita.com/district_13_bm'
-      */
-  title: "SwiftKongCode",
+  title: "DosanKongCode",
   author: "Masaki Hayashi",
   occupation: "iOS App Developer",
-  headerTitle: "SwiftKongCode",
-  description: "SwiftKongCode, created with Sveltekit and Tailwind.css",
+  headerTitle: "DosanKongCode",
+  description: "DosanKongCode, created with Sveltekit and Tailwind.css",
   language: "en-us",
   theme: "dark",
   // system, dark or light
-  domain: "https://swift-kong-code.vercel.app/",
-  siteUrl: "https://swift-kong-code.vercel.app/",
+  domain: "https://dosan-kong-code.vercel.app/",
+  siteUrl: "https://dosan-kong-code.vercel.app/",
   siteRepo: "https://github.com/mlballack/swift-kong.git",
   siteLogo: avatarurl,
   //'/icon-512.png',
@@ -44,9 +37,115 @@ const user = {
   twitter: "https://twitter.com/mh_poteto"
 };
 const navLinks = [
+  { href: "/", title: "Home" },
   { href: "/about", title: "About" },
   { href: "/projects", title: "Projects" },
   { href: "/blog", title: "Blog" }
+];
+const educations = [
+  {
+    period: "2013 - 2017",
+    degree: "Bachelor",
+    university: "The University of Electro-Communications",
+    studies: [
+      "Machine Engineering",
+      "Modeling of the Neuron-Astrocytes communication (Tripartite synapse)"
+    ]
+  },
+  {
+    period: "2017 - 2019",
+    degree: "Master",
+    university: "The University of Electro-Communications",
+    studies: [
+      "Machine Engineering",
+      "Modeling of the Neuron-Astrocytes communication (Tripartite synapse)",
+      "Modeling of the neuronal oscillation between Awake and Sleep state"
+    ]
+  }
+];
+const experiences = [
+  {
+    period: "2019 - 2020",
+    product_name: "WatchOSアプリの新規開発",
+    target: "医療現場向け",
+    features: [
+      "病院内用のSNS",
+      "AppleWatchで音声認識",
+      "スタンプ投稿"
+    ],
+    skills: ["Swift", "Objective-C", "MVC", "WebSocket", "SpeechRecognition"]
+  },
+  {
+    period: "2019 - 2020",
+    product_name: "iOSアプリの新規開発",
+    target: "家庭教師向け",
+    features: [
+      "家庭教師と生徒のマッチングサービス",
+      "目的に合った教師の選択",
+      "チャット機能",
+      "授業の予約"
+    ],
+    skills: ["Swift", "MVC", "Firebase"]
+  },
+  {
+    period: "2020 - 2021",
+    product_name: "iOSアプリのバージョンアップ開発",
+    target: "医療現場向け",
+    features: [
+      "病院内用のSNS",
+      "音声認識による声でメモ"
+    ],
+    skills: ["Objective-C", "MVC", "MVP", "XCTest", "WebSocket", "SpeechRecognition"]
+  },
+  {
+    period: "2020 - 2021",
+    product_name: "iPadOSアプリのバージョンアップ開発",
+    target: "医療現場向け",
+    features: [
+      "音声認識によるデータ記録",
+      "記録データの出力",
+      "写真にマークアップでメモ"
+    ],
+    skills: ["Objective-C", "MVC", "SpeechRecognition"]
+  },
+  {
+    period: "2022 - 2023",
+    product_name: "iOSアプリの新規開発",
+    target: "医療現場向け",
+    features: [
+      "音声認識による声でメモ",
+      "BluetoothでPCにテキストや画像を転送",
+      "写真で記録"
+    ],
+    skills: ["Swift", "MVP", "VIP", "XCTest", "Alamofire", "SpeechRecognition"]
+  },
+  {
+    period: "2023 - 2024",
+    product_name: "iOSアプリの新規開発",
+    target: "一般向け",
+    features: [
+      "日付リストでTodoの確認",
+      "タップですぐにTodoの記録"
+    ],
+    skills: ["Swift", "SwiftUI", "MV", "XCTest"]
+  },
+  {
+    period: "2023 - 2024",
+    product_name: "iOSアプリの新規開発",
+    target: "医療現場向け",
+    features: [
+      "音声認識による情報検索",
+      "音声認識によるリマインダー登録"
+    ],
+    skills: ["Swift", "SwiftUI", "MV", "XCTest", "Alamofire", "SpeechRecognition"]
+  }
+];
+const skills = [
+  { laung: "Swift", level: 80 },
+  { laung: "Objective-C", level: 70 },
+  { laung: "Javascript", level: 50 },
+  { laung: "Python", level: 50 },
+  { laung: "MATLAB", level: 40 }
 ];
 const comment = {
   provider: "giscus",
@@ -93,8 +192,11 @@ const comment = {
   }
 };
 export {
-  comment as a,
+  experiences as a,
+  comment as b,
   config as c,
+  educations as e,
   navLinks as n,
+  skills as s,
   user as u
 };

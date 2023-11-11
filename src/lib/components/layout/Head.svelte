@@ -1,7 +1,7 @@
 <script lang="ts">
     import { config } from "$lib/config";
 
-    export let title = "Official Website";
+    export let title = "DosanKongCode";
     export let description = config.description;
     export let author = config.author;
     export let url = config.siteUrl;

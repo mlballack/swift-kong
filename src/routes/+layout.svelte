@@ -1,5 +1,4 @@
 <script lang="ts">
-    import MatrixBackground from "$lib/components/MatrixBackground.svelte";
     import Footer from "$lib/components/layout/Footer.svelte";
     import Header from "$lib/components/layout/Header.svelte";
     import Transition from "$lib/components/layout/Transition.svelte";

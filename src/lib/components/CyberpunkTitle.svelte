@@ -9,7 +9,7 @@
         {title}
     </div> -->
     <div class=" text-4xl font-semibold sm:block font-title">
-        <p data-text="SwiftKongCode">SwiftKongCode</p>
+        <p data-text="DosanKongCode">DosanKongCode</p>
     </div>
 {/if}
 
@@ -26,7 +26,7 @@
     div p {
         color: #fff;
         text-transform: uppercase;
-        font-size: 2rem /* 36px */;
+        font-size: 1.7rem /* 36px */;
         line-height: 2.5rem /* 40px */;
         /* font-size: clamp(2rem, 3rem + 1vw, 5rem); */
         font-family: "Orbitron";
@@ -58,7 +58,7 @@
     div p:after {
         left: -1px;
         text-shadow: -1px 2px #fff;
-        animation: glitch-2 30s ease-in-out reverse infinite;
+        animation: glitch-2 20s ease-in-out reverse infinite;
     }
 
     @keyframes glitch-1 {

@@ -106,7 +106,7 @@ const options = {
   root: Root,
   service_worker: false,
   templates: {
-    app: ({ head, body, assets: assets2, nonce, env }) => '<!DOCTYPE html>\n<html lang="en" className="scroll-smooth">\n\n<head>\n	<meta charset="utf-8" />\n	<meta name="viewport" content="width=device-width, initial-scale=1" />\n	<meta name="msapplication-TileColor" content="#000000" />\n	<meta name="theme-color" media="(prefers-color-scheme: light)" content="#fff" />\n	<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000" />\n	<!-- <link rel="alternate" type="application/rss+xml" href="/feed.xml" /> -->\n	<!-- <link rel="icon" href="' + assets2 + '/favicon.png" /> -->\n	' + head + '\n</head>\n\n<body class="bg-white text-black antialiased dark:bg-gray-900 dark:text-white" data-sveltekit-prefetch>\n	<div style="display: contents">' + body + "</div>\n</body>\n\n<script>\n	if (localStorage.theme === 'dark') document.documentElement.classList.add('dark');\n<\/script>\n\n</html>",
+    app: ({ head, body, assets: assets2, nonce, env }) => '<!DOCTYPE html>\n<html lang="en" className="scroll-smooth">\n\n<head>\n	<meta charset="utf-8" />\n	<meta name="viewport" content="width=device-width, initial-scale=1" />\n	<meta name="msapplication-TileColor" content="#000000" />\n	<meta name="theme-color" media="(prefers-color-scheme: light)" content="#fff" />\n	<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000" />\n\n	<link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet">\n	<!-- <link rel="alternate" type="application/rss+xml" href="/feed.xml" /> -->\n	<!-- <link rel="icon" href="' + assets2 + '/favicon.png" /> -->\n	' + head + '\n</head>\n\n<body class="bg-white text-black antialiased dark:bg-gray-900 dark:text-white" data-sveltekit-prefetch>\n	<div style="display: contents">' + body + "</div>\n</body>\n\n<script>\n	if (localStorage.theme === 'dark') document.documentElement.classList.add('dark');\n<\/script>\n\n</html>",
     error: ({ status, message }) => '<!DOCTYPE html>\n<html lang="en">\n	<head>\n		<meta charset="utf-8" />\n		<title>' + message + `</title>
 
 		<style>
@@ -168,7 +168,7 @@ const options = {
 		<div class="error">
 			<span class="status">` + status + '</span>\n			<div class="message">\n				<h1>' + message + "</h1>\n			</div>\n		</div>\n	</body>\n</html>\n"
   },
-  version_hash: "366nqt"
+  version_hash: "1qr9mhh"
 };
 function get_hooks() {
   return {};
