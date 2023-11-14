@@ -1,7 +1,8 @@
-import { c as create_ssr_component, v as validate_component, e as escape, b as each, d as add_attribute } from "../../chunks/ssr.js";
+import { c as create_ssr_component, v as validate_component, e as escape, b as each, d as add_attribute, f as subscribe } from "../../chunks/ssr.js";
 import { c as config, n as navLinks } from "../../chunks/config.js";
 import { S as SocialIcon } from "../../chunks/SocialIcon.js";
-/* empty css                                                           */const Footer = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+/* empty css                                                           */import { p as page } from "../../chunks/stores.js";
+const Footer = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let year = (/* @__PURE__ */ new Date()).getFullYear();
   return `<footer><div class="mt-16 flex flex-col items-center border-t pt-6 gap-2"><div class="mb-3 flex space-x-2">${validate_component(SocialIcon, "SocialIcon").$$render(
     $$result,
@@ -48,6 +49,30 @@ const Transition = create_ssr_component(($$result, $$props, $$bindings, slots) =
   return `<div>${slots.default ? slots.default({}) : ``}</div>`;
 });
 const app = "";
+const id = "G-H3J02W7984";
+const GoogleAnalytics = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  let $page, $$unsubscribe_page;
+  $$unsubscribe_page = subscribe(page, (value) => $page = value);
+  {
+    {
+      if (typeof gtag !== "undefined") {
+        gtag("config", id, {
+          page_title: document.title,
+          page_path: $page.url.pathname
+        });
+      }
+    }
+  }
+  $$unsubscribe_page();
+  return `  ${$$result.head += `<!-- HEAD_svelte-6h8p1n_START --><script async src="${"https://www.googletagmanager.com/gtag/js?id=" + escape(id, true)}"><\/script><script data-svelte-h="svelte-1ugl9lo">window.dataLayer = window.dataLayer || [];
+
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+
+		gtag("js", new Date());
+		gtag("config", id);<\/script><!-- HEAD_svelte-6h8p1n_END -->`, ""}`;
+});
 const Layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let { data = { pathname: "" } } = $$props;
   if ($$props.data === void 0 && $$bindings.data && data !== void 0)
@@ -56,7 +81,7 @@ const Layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     default: () => {
       return `${slots.default ? slots.default({}) : ``}`;
     }
-  })}</main> ${validate_component(Footer, "Footer").$$render($$result, {}, {}, {})}</div></div>`;
+  })}</main> ${validate_component(Footer, "Footer").$$render($$result, {}, {}, {})}</div></div> ${validate_component(GoogleAnalytics, "GoogleAnalytics").$$render($$result, {}, {}, {})}`;
 });
 export {
   Layout as default

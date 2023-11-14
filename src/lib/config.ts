@@ -160,8 +160,8 @@ export const skills = [
 ];
 
 // supported systems: googleAnalytics, plausible, and simpleAnalytics
-export const analytics = {
-    googleAnalyticsId: '', // e.g. UA-000000-2 or G-XXXXXXX
+export const analytics_data = {
+    googleAnalyticsId: 'G-H3J02W7984', // e.g. UA-000000-2 or G-XXXXXXX
     plausibleDomain: '', // e.g. pied-piper-blog.netlify.app
     simpleAnalytics: false // true or false
 };

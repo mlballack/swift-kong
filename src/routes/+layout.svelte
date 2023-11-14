@@ -4,6 +4,8 @@
     import Transition from "$lib/components/layout/Transition.svelte";
     import "../app.css";
 
+    import GoogleAnalytics from "$lib/components/analytics/GoogleAnalytics.svelte";
+
     export let data = {
         pathname: "",
     };
@@ -20,3 +22,5 @@
         <Footer />
     </div>
 </div>
+
+<GoogleAnalytics />
