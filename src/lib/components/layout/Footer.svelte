@@ -27,6 +27,7 @@
         >
             <a href="/">{config.title}</a> &nbsp; • &nbsp; © {year}
             {config.author} &nbsp; • &nbsp; <a href="/rss.xml">RSS Feed</a>
+            &nbsp; • &nbsp; <a href="/privacy-policy">Privacy Policy</a>
         </div>
     </div>
 </footer>

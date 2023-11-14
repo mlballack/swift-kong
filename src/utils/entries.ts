@@ -31,6 +31,12 @@ const getAuthor = () => {
     )
 }
 
+const getRules = () => {
+    return Object.entries(
+        import.meta.glob('/content/rules/**/*.md', { eager: true })
+    );
+};
+
 const getEntriesByType = (entryType: string) => {
     switch (entryType) {
         case "posts":
@@ -41,6 +47,8 @@ const getEntriesByType = (entryType: string) => {
             return getAuthors();
         case 'author':
             return getAuthor();
+        case 'rules':
+            return getRules();
         default:
             throw new Error(`unknown entry type ${entryType}`);
     }

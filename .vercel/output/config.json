@@ -24,6 +24,17 @@
 			}
 		},
 		{
+			"src": "/privacy-policy",
+			"dest": "/privacy-policy/"
+		},
+		{
+			"src": "/privacy-policy/",
+			"status": 308,
+			"headers": {
+				"Location": "/privacy-policy"
+			}
+		},
+		{
 			"src": "/projects",
 			"dest": "/projects/"
 		},
@@ -145,6 +156,9 @@
 		},
 		"blog.html": {
 			"path": "blog"
+		},
+		"privacy-policy.html": {
+			"path": "privacy-policy"
 		},
 		"projects.html": {
 			"path": "projects"
