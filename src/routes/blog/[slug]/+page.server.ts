@@ -18,16 +18,3 @@ export async function load({ params }) {
         author: author
     };
 }
-
-// export async function load({ params }) {
-//     try {
-//         const post = await import(`/content/posts/${params.slug}.md`)
-//         console.log("post: ", post.default.render)
-//         return {
-//             content: post.default.render,
-//             meta: post.metadata
-//         }
-//     } catch (e) {
-//         throw error(404, `Could not find ${params.slug}`)
-//     }
-// }
