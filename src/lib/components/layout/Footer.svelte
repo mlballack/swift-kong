@@ -22,12 +22,14 @@
         <!-- {#if config.newsletter.provider}
             <Newsletter />
         {/if} -->
+        <div class=" flex space-x-2 text-sm text-gray-500 dark:text-gray-400">
+            <a href="/">{config.title}</a> &nbsp; • &nbsp; © {year}
+            {config.author} &nbsp; • &nbsp; <a href="/rss.xml">RSS Feed</a>
+        </div>
         <div
             class="mb-4 flex space-x-2 text-sm text-gray-500 dark:text-gray-400"
         >
-            <a href="/">{config.title}</a> &nbsp; • &nbsp; © {year}
-            {config.author} &nbsp; • &nbsp; <a href="/rss.xml">RSS Feed</a>
-            &nbsp; • &nbsp; <a href="/privacy-policy">Privacy Policy</a>
+            <a href="/privacy-policy">Privacy Policy</a>
         </div>
     </div>
 </footer>
