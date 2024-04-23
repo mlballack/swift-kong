@@ -8,8 +8,8 @@ export const config = {
     description: 'DosanKongCode, created with Sveltekit and Tailwind.css',
     language: 'en-us',
     theme: 'dark', // system, dark or light
-    domain: 'https://dosan-kong-code.vercel.app/',
-    siteUrl: 'https://dosan-kong-code.vercel.app/',
+    domain: 'https://dosankong.com',
+    siteUrl: 'https://dosankong.com',
     siteRepo: 'https://github.com/mlballack/swift-kong.git',
     siteLogo: avatarurl, //'/icon-512.png',
     image: avatarurl,

@@ -6,16 +6,16 @@ export const prerender = true;
 const trimSlash = (str: string) => str.replace(/^\/|\/$/g, '');
 
 export async function GET() {
-    const pages = navLinks;
-    const posts = getEntries('posts');
-    const body = sitemap(posts, pages);
+  const pages = navLinks;
+  const posts = getEntries('posts');
+  const body = sitemap(posts, pages);
 
-    return new Response(body, {
-        headers: {
-            'Cache-Control': `max-age=0, s-maxage=${3600}`,
-            'Content-Type': 'application/xml'
-        }
-    });
+  return new Response(body, {
+    headers: {
+      'Cache-Control': `max-age=0, s-maxage=${3600}`,
+      'Content-Type': 'application/xml'
+    }
+  });
 }
 
 const sitemap = (posts: any[], pages: any[]) => `<?xml version="1.0" encoding="UTF-8" ?>
@@ -33,27 +33,27 @@ const sitemap = (posts: any[], pages: any[]) => `<?xml version="1.0" encoding="U
       <priority>0.7</priority>
     </url>
     ${pages
-        .map(
-            (page) => `
+    .map(
+      (page) => `
     <url>
       <loc>${config.siteUrl}/${trimSlash(page.href)}</loc>
       <changefreq>daily</changefreq>
       <priority>0.7</priority>
     </url>
     `
-        )
-        .join('')}
+    )
+    .join('')}
     ${posts
-        .map((post) =>
-            post.isPrivate
-                ? null
-                : `
+    .map((post) =>
+      post.isPrivate
+        ? null
+        : `
     <url>
       <loc>${config.siteUrl}/${post.slug}</loc>
       <changefreq>daily</changefreq>
       <priority>0.7</priority>
     </url>
     `
-        )
-        .join('')}
+    )
+    .join('')}
   </urlset>`;
